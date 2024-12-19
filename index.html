@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body {
+            background: linear-gradient(45deg, #190f2c, #200b30);
+            padding: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        
+        /* Main CSS */
+        .grid-wrapper > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-wrapper > div > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+        .grid-wrapper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+        }
+        .grid-wrapper .wide {
+            grid-column: span 2;
+        }
+        .grid-wrapper .tall {
+            grid-row: span 2;
+        }
+        .grid-wrapper .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        </style>
+</head>
+<body>
+    <div class="grid-wrapper">
+        <div class="tall">
+            <img src="https://makwanakd.wordpress.com/wp-content/uploads/2019/02/kd.jpg" alt="" />
+        </div>
+        <div class="wide">
+            <img src="https://makwanakd.wordpress.com/wp-content/uploads/2019/02/img_20190129_101319.jpg" alt="" />
+        </div>
+        <div class="wide">
+            <img src="https://makwanakd.wordpress.com/wp-content/uploads/2017/07/cropped-20170223_082717.jpg" alt="">
+        </div>
+        <div class="wide"><img src="https://makwanakd.wordpress.com/wp-content/uploads/2024/12/kiran.jpg" alt="" srcset=""></div>
+        <div class="tall"><img src="https://makwanakd.wordpress.com/wp-content/uploads/2024/12/b16d9c90b053f8334e8b2a9956867fc2.jpg" alt="" srcset=""></div>
+        <div class="tall"><img src="https://makwanakd.wordpress.com/wp-content/uploads/2024/12/image-play.jpg" alt="" srcset=""></div>
+        <div><img src="https://makwanakd.wordpress.com/wp-content/uploads/2024/12/profile.png" alt="" srcset=""></div>
+        <div class="wide"><img src="https://makwanakd.wordpress.com/wp-content/uploads/2024/12/img20241114180524.jpg" alt="" srcset=""></div>
+        <div class="tall"><img src="https://makwanakd.wordpress.com/wp-content/uploads/2024/12/img20230820115944.jpg" alt="" srcset=""></div>
+        <div class="wide"><img src="https://makwanakd.wordpress.com/wp-content/uploads/2024/12/img20220613172118.jpg" alt="" srcset=""></div>
+        <div class="tall"><img src="https://makwanakd.wordpress.com/wp-content/uploads/2024/12/7378e4c8c1ed8482973949b207ce468f.jpg" alt="" srcset=""></div>
+    </div>
+</body>
+</html>
